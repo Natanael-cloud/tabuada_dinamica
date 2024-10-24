@@ -1,0 +1,148 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f5f3f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0 10px; /* Espaçamento lateral para telas menores */
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"]:focus {
+  border-color: #6a1b9a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+}
+
+button:hover {
+  background-color: #7e57c2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#tabuada {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+
+table, th, td {
+  border: none;
+  padding: 10px;
+}
+
+th {
+  background-color: #6a1b9a;
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f0e6f7;
+}
+
+tr:nth-child(odd) {
+  background-color: #faf3fc;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  table, th, td {
+      font-size: 1rem;
+  }
+
+  input[type="number"], button {
+      font-size: 0.9rem;
+  }
+
+  #tabuada {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  table, th, td {
+      font-size: 0.9rem;
+  }
+
+  input[type="number"], button {
+      font-size: 0.8rem;
+  }
+}
